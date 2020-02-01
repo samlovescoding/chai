@@ -1,0 +1,5 @@
+<?php
+
+if(!defined("CHAI_CLI")) define("CHAI_CLI", true);
+
+require "index.php";

@@ -1,2 +1,5 @@
 <?php
-    echo "You are running in Chai Console Development.";
+
+    require "config.php";
+    require "console.php";
+    require "router.php";

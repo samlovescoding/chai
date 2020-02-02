@@ -15,8 +15,8 @@
     array_shift($arguments);
     $argument_count--;
 
-    require_once "library/problem.php";
-    require_once "library/help.php";
+    require_once "library" . DIRECTORY_SEPARATOR . "problem.php";
+    require_once "library" . DIRECTORY_SEPARATOR . "help.php";
 
     $controller = DEFAULT_CONTROLLER;
     $method = DEFAULT_METHOD;
@@ -27,8 +27,8 @@
         
 
         
-        if(file_exists(CHAI_SYSTEM_DIR . "/console/library/" . $library_name . ".php")){
-            require_once "library/" . $library_name . ".php";
+        if(file_exists(CHAI_SYSTEM_DIR . DIRECTORY_SEPARATOR . "console" . DIRECTORY_SEPARATOR . "library" . DIRECTORY_SEPARATOR . $library_name . ".php")){
+            require_once "library" . DIRECTORY_SEPARATOR . $library_name . ".php";
             $controller = $library_name;
 
             if($argument_count > 0){

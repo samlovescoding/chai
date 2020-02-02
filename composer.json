@@ -1,0 +1,14 @@
+{
+    "name": "samlovescoding/chai",
+    "description": "A PHP Framework that does things differently.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sampan Verma",
+            "email": "sampan.developer@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}

@@ -9,7 +9,8 @@
  *  public root.
 */
 if(!defined("CHAI_SYSTEM_DIR")) define("CHAI_SYSTEM_DIR", "system");
-if(!defined("CHAI_APPLICATIONS_DIR")) define("CHAI_APPLICATIONS_DIR", "applications");
+
+// if(!defined("CHAI_APPLICATIONS_DIR")) define("CHAI_APPLICATIONS_DIR", "application");
 
 if(!defined("CHAI_CLI")) define("CHAI_CLI", false);
 if(CHAI_CLI){

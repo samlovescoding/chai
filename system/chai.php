@@ -6,6 +6,8 @@
     // Load Application Level Files
     require "config.php";
 
-    // Perform Routing
-    require "router.php";
+    if(CHAI_CLI == false){
+        // Perform Routing
+        require "router.php";
+    }
     

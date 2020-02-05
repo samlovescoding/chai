@@ -1,8 +1,11 @@
 <?php
 
-    class Chai_Console{
+    class Chai_Console extends Chai{
+        public function params(){
+            global $argv;
+            return $argv;
+        }
         public function clear(){
-            
             echo chr(27).chr(91).'H'.chr(27).chr(91).'J';
             if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                 system("cls");

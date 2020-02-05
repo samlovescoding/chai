@@ -46,4 +46,6 @@
             $method = ERROR_COMMAND_NOT_FOUND_METHOD;
         }
     }
-    call_user_func_array(array(ucfirst($controller), $method), $arguments);
+    $controller_name = ucfirst($controller);
+    $object = new $controller_name;
+    call_user_func_array(array($object, $method), $arguments);

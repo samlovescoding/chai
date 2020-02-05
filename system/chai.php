@@ -1,11 +1,11 @@
 <?php
 
-    // Load Chai Libraries
+    // Load Chai Library
     require "http/index.php";
 
     // Load Application Level Files
-    require "routes.php";
+    require "config.php";
 
     // Perform Routing
-    require "http/router.php";
+    require "router.php";
     

@@ -8,6 +8,7 @@
  *  Chai system and Chai based applicaions must not be hosted on 
  *  public root.
 */
+if(!defined("CHAI")) define("CHAI", true);
 if(!defined("CHAI_SYSTEM_DIR")) define("CHAI_SYSTEM_DIR", "system");
 
 // if(!defined("CHAI_APPLICATIONS_DIR")) define("CHAI_APPLICATIONS_DIR", "application");
